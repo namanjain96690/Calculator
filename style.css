@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Tamma 2', cursive;
+    background-color: rgb(19, 149, 153);
+}
+.container{
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    min-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+h1{
+    width:100%;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0;
+    color: #ccc;
+}
+input{
+    font-size: 2rem;
+    height: 60px;
+    line-height: 100%;
+    width: 95%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: rgba(17, 17, 17, 0.774);
+    letter-spacing: 0.1rem;
+}
+table{
+    width: 100%;
+}
+button{
+    border-radius: 8px; 
+    width: 100%;
+    height: 12vh;
+    max-height: 55px;
+    font-size: 2rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.7;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+@media (max-width: 500px){
+    .container{
+        width: 250px;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    input{
+        overflow: auto;
+        font-size: 1.8rem;
+        height: 50px;
+    }
+    button{
+        overflow: hidden;
+        font-size: 1.5rem;
+    }
+}
